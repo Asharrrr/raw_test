@@ -1,7 +1,7 @@
 export const revalidate = 60; // Revalidate every 60 seconds
 import type { Metadata } from 'next';
 import Head from 'next/head';
-const SITE_URL = "http://localhost:3000"; // Change to your production URL
+import { SITE_URL } from '@/lib/constants';
 
 export const metadata: Metadata = {
   title: 'Contact | Countdown Timer X',
