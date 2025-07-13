@@ -1,7 +1,8 @@
 import React from "react";
 import Image from "next/image";
 import type { Metadata } from "next";
-const SITE_URL = "http://localhost:3000"; // Corrected typo
+import { SITE_URL } from '@/lib/constants';
+
 export const revalidate = 40; // Revalidate every 40 seconds
 // // Uncomment the following lines if you want to use the metadata for the About page
 
