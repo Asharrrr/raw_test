@@ -13,16 +13,16 @@ export const metadata = {
   ],
   authors: [{ name: "Muhammad Ashar" }],
   alternates: {
-    canonical: "http:localhost:3000/",
+    canonical: "https://rawtest.netlify.app/",
   },
   openGraph: {
     title: "Countdown Timer - Home",
     description: "Countdown Timer - Your go-to tool for customizable countdown timers, articles, and tags. Stay on track and organized.",
-    url: "https://countdowntimerx.com",
+    url: "https://rawtest.netlify.app/",
     siteName: "Countdown Timer X",
     images: [
       {
-        url: "https://countdowntimerx.com/og-image.png",
+        url: "https://rawtest.netlify.app//og-image.png",
         width: 1200,
         height: 630,
         alt: "Countdown Timer X",
@@ -35,7 +35,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Countdown Timer X - Home",
     description: "Countdown Timer X - Your go-to tool for customizable countdown timers, articles, and tags. Stay on track and organized.",
-    images: ["https://countdowntimerx.com/og-image.png"],
+    images: ["https://rawtest.netlify.app//og-image.png"],
     creator: "@yourTwitterHandle", // Replace with actual handle
   },
 };
@@ -59,12 +59,10 @@ import Head from 'next/head';
 // Dynamically import components with loading fallback
 const Countdown = dynamic(() => import('@/components/count-down'), {
   loading: () => <p>Loading Countdown...</p>,
-  ssr: true, // or false if you want it client-only
 });
 
 const CountdownTimerGuide = dynamic(() => import('@/components/article'), {
   loading: () => <p>Loading Article...</p>,
-  ssr: true,
 });
 
 export default function Home() {
