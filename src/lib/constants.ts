@@ -1,1 +1,1 @@
-export const SITE_URL = 'https://rawtest.netlify.app/';
+export const SITE_URL = 'https://rawtest.netlify.app';
