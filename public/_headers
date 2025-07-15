@@ -5,3 +5,7 @@
 /robots.txt
   Content-Type: text/plain
   Cache-Control: public, max-age=0, must-revalidate
+
+/*.xml
+  Content-Type: application/xml
+  Access-Control-Allow-Origin: *
